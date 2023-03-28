@@ -1,17 +1,22 @@
 {
+  "name": "my-app",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "^18.11.5",
-    "@types/react-dom": "^18.0.7",
-    "@types/react": "^18.0.23",
-    "next": "latest",
-    "react-dom": "^18.2.0",
-    "react": "^18.2.0",
-    "typescript": "^4.8.4"
+    "@types/node": "18.15.10",
+    "@types/react": "18.0.30",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.2"
   }
 }
