@@ -1,18 +1,20 @@
-name: "Deploy to GitHub Pages"
+name: Deploy to Github Pages
 
 on:
   push:
     branches:
       - main
 
+  workflow_dispatch:
+
 jobs:
   deployment:
     runs-on: ubuntu-latest
 
-  steps:
+    steps:
       - uses: actions/checkout@v3
 
-      - name: Setup
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
